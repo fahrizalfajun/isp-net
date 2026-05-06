@@ -1,0 +1,43 @@
+.main { padding-top: calc(var(--header-height) + var(--space-xl)); padding-bottom: var(--space-4xl); min-height: 100vh; }
+
+.greeting { margin-bottom: var(--space-2xl); }
+.greeting h1 { font-size: 1.8rem; margin-bottom: var(--space-xs); }
+.greeting p { color: var(--text-muted); }
+
+.overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); margin-bottom: var(--space-2xl); }
+.overviewCard { display: flex; align-items: flex-start; gap: var(--space-md); }
+.overviewCard strong { display: block; font-size: 1.05rem; margin-top: 4px; }
+.label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.due { font-size: 0.78rem; color: var(--warning); display: block; margin-top: 2px; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+
+.panel { background: var(--bg-card); border: var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-xl); }
+.panelHeader { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-lg); }
+.panelHeader h2 { font-size: 1.1rem; display: flex; align-items: center; gap: var(--space-sm); }
+
+.invoiceList { display: flex; flex-direction: column; }
+.invoiceItem {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-md) 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.invoiceItem:last-child { border-bottom: none; }
+.invoiceInfo { display: flex; align-items: center; gap: var(--space-md); }
+.invoiceInfo strong { display: block; font-size: 0.9rem; }
+.invoiceInfo span { font-size: 0.8rem; color: var(--text-muted); }
+
+.ticketList { display: flex; flex-direction: column; }
+.ticketItem {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding: var(--space-md) 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.ticketItem:last-child { border-bottom: none; }
+.ticketId { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); }
+.ticketItem strong { display: block; font-size: 0.9rem; margin: 2px 0; }
+.ticketDate { font-size: 0.78rem; color: var(--text-dim); }
+.empty { color: var(--text-dim); font-size: 0.9rem; text-align: center; padding: var(--space-xl); }
+
+@media (max-width: 768px) {
+  .overview { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+}

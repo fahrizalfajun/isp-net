@@ -1,0 +1,12 @@
+.header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: var(--space-xl); }
+.header h1 { font-size: 1.5rem; margin-bottom: 4px; }
+.sub { color: var(--text-muted); font-size: 0.85rem; }
+.toolbar { display: flex; gap: var(--space-md); margin-bottom: var(--space-lg); flex-wrap: wrap; }
+.searchWrap { display: flex; align-items: center; gap: var(--space-sm); padding: 8px 16px; background: var(--bg-surface); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-md); color: var(--text-muted); min-width: 240px; }
+.searchWrap input { border: none; background: none; color: var(--text-primary); font-family: var(--font-sans); font-size: 0.9rem; outline: none; width: 100%; }
+.filters { display: flex; gap: 4px; flex-wrap: wrap; }
+.filterBtn { padding: 6px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-full); color: var(--text-muted); font-family: var(--font-sans); font-size: 0.8rem; cursor: pointer; transition: all var(--transition-fast); }
+.filterBtn:hover { background: rgba(255,255,255,0.08); }
+.filterActive { background: var(--primary) !important; color: #fff !important; border-color: var(--primary) !important; }
+.tableWrap { background: var(--bg-card); border: var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; }
+@media (max-width: 768px) { .tableWrap { overflow-x: auto; } }

@@ -1,0 +1,62 @@
+.main { padding-top: var(--header-height); }
+.hero { padding: var(--space-3xl) 0 var(--space-xl); text-align: center; }
+.heroDesc { color: var(--text-muted); font-size: 1.1rem; max-width: 560px; margin: var(--space-md) auto 0; }
+
+.checker { padding-bottom: var(--space-4xl); }
+
+.formCard {
+  background: var(--bg-card);
+  border: var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl) var(--space-2xl) var(--space-xl);
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+  text-align: center;
+}
+
+.formIcon {
+  width: 64px; height: 64px; border-radius: var(--radius-lg);
+  background: rgba(0,102,255,0.12); color: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto var(--space-lg);
+}
+
+.formCard h2 { margin-bottom: var(--space-sm); font-size: 1.5rem; }
+.formDesc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: var(--space-xl); }
+
+.formGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md); text-align: left; }
+
+.result {
+  display: flex; align-items: flex-start; gap: var(--space-lg);
+  margin-top: var(--space-xl); padding: var(--space-xl);
+  border-radius: var(--radius-lg); text-align: left;
+}
+
+.result h3 { font-size: 1.1rem; margin-bottom: var(--space-xs); }
+.result p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+
+.resultSuccess { background: var(--success-bg); border: 1px solid rgba(0,200,83,0.2); color: var(--success); }
+.resultSuccess h3, .resultSuccess strong { color: var(--success); }
+.resultDanger { background: var(--danger-bg); border: 1px solid rgba(255,61,87,0.2); color: var(--danger); }
+.resultDanger h3 { color: var(--danger); }
+
+.waitlistForm { display: flex; gap: var(--space-sm); margin-top: var(--space-md); }
+.waitlistForm input { flex: 1; }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.statCard { text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-sm); }
+.statNum { font-size: 2rem; font-weight: 800; }
+.statLabel { font-size: 0.85rem; color: var(--text-muted); }
+
+@media (max-width: 768px) {
+  .formGrid { grid-template-columns: 1fr; }
+  .statsGrid { grid-template-columns: 1fr; }
+  .waitlistForm { flex-direction: column; }
+}
